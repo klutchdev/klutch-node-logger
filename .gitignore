@@ -1,2 +1,11 @@
+# Ignore built ts files
+dist/**/*
+
+# ignore yarn.lock
+yarn.lock
+
+# Dependency directory
 node_modules
-.DS_STORE
+
+# OS metadata
+.DS_Store
