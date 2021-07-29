@@ -1,5 +1,7 @@
 # Klutch Node Logger
 
+![Screenshot](/screen-shot.png)
+
 ## Installation
 ```bash
 npm i klutch-node-logger
@@ -8,13 +10,13 @@ npm i klutch-node-logger
 ## Usage
 
 ```typescript
-// Use with TypeScript or JavaScript files
+// Use with TypeScript or JavaScript
 import {
-  errorLog,
-  infoLog,
   log,
   successLog,
   warnLog,
+  errorLog,
+  infoLog,
   successIconLog,
   warnIconLog,
   errorIconLog,
@@ -22,7 +24,7 @@ import {
 } from "klutch-node-logger";
 
 // Standard log
-log("Log types:\n");
+log("Log\n");
 
 // Success
 successLog("Success");
