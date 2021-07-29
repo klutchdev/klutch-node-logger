@@ -25,7 +25,21 @@ export function error(msg: string) {
 export function info(msg: string) {
   console.info(msg);
 }
-
+export function table(obj: object) {
+  console.table(obj);
+}
+export function time(label: string) {
+  console.time(label);
+}
+export function timeEnd(label: string) {
+  console.timeEnd(label);
+}
+export function timeLog(label: string | "default", operation: void | any) {
+  console.timeLog(label, operation);
+}
+export function clear() {
+  console.clear();
+}
 export function successLog(msg: string) {
   log(green(msg));
 }
@@ -38,7 +52,6 @@ export function errorLog(msg: string) {
 export function infoLog(msg: string) {
   info(blue(msg));
 }
-
 export function successIconLog(msg: string) {
   log(green(iconSuccess, msg));
 }
@@ -50,4 +63,10 @@ export function errorIconLog(msg: string) {
 }
 export function infoIconLog(msg: string) {
   info(blue(iconInfo, msg));
+}
+export function stringify(obj: object) {
+  log(JSON.stringify(obj, null, 2));
+}
+export function parseJson(str: string) {
+  log(JSON.parse(str));
 }

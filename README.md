@@ -10,21 +10,30 @@ npm i klutch-node-logger
 ## Usage
 
 ```typescript
-// Use with TypeScript or JavaScript
 import {
   log,
+  clear,
   successLog,
-  warnLog,
-  errorLog,
-  infoLog,
   successIconLog,
+  warnLog,
   warnIconLog,
+  errorLog,
   errorIconLog,
+  infoLog,
   infoIconLog,
+  time,
+  timeLog,
+  timeEnd,
+  table,
+  stringify,
+  parseJson,
 } from "klutch-node-logger";
 
-// Standard log
+// Basic log
 log("Log\n");
+
+// Clear console/TTY
+clear(); 
 
 // Success
 successLog("Success");
@@ -41,4 +50,17 @@ errorIconLog("Error w/icon\n");
 // Info
 infoLog("Info");
 infoIconLog("Info w/icon");
+
+// Timer
+time('update'); // Time an operation
+timeLog('update', operation); // Log a specific operation 
+timeEnd('update'); // Stop timing an operation
+
+// Table
+table([{ valueOne: 1, valueTwo: "2" }]);
+
+// JSON
+stringify({"valueOne": 1,"valueTwo": "2"}); // JSON to string
+parseJson('{"valueOne": 1,"valueTwo": "2"}'); // Parse JSON string
+
 ```
