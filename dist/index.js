@@ -1,0 +1,24 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.infoIconLog = exports.errorIconLog = exports.warnIconLog = exports.successIconLog = exports.infoIcon = exports.errorIcon = exports.warnIcon = exports.logIcon = exports.infoLog = exports.errorLog = exports.warnLog = exports.successLog = exports.info = exports.error = exports.warn = exports.log = void 0;
+var basicLogs_1 = require("./logger/basicLogs");
+Object.defineProperty(exports, "log", { enumerable: true, get: function () { return basicLogs_1.log; } });
+Object.defineProperty(exports, "warn", { enumerable: true, get: function () { return basicLogs_1.warn; } });
+Object.defineProperty(exports, "error", { enumerable: true, get: function () { return basicLogs_1.error; } });
+Object.defineProperty(exports, "info", { enumerable: true, get: function () { return basicLogs_1.info; } });
+var colorLogs_1 = require("./logger/colorLogs");
+Object.defineProperty(exports, "successLog", { enumerable: true, get: function () { return colorLogs_1.successLog; } });
+Object.defineProperty(exports, "warnLog", { enumerable: true, get: function () { return colorLogs_1.warnLog; } });
+Object.defineProperty(exports, "errorLog", { enumerable: true, get: function () { return colorLogs_1.errorLog; } });
+Object.defineProperty(exports, "infoLog", { enumerable: true, get: function () { return colorLogs_1.infoLog; } });
+var basicIconLogs_1 = require("./logger/basicIconLogs");
+Object.defineProperty(exports, "logIcon", { enumerable: true, get: function () { return basicIconLogs_1.logIcon; } });
+Object.defineProperty(exports, "warnIcon", { enumerable: true, get: function () { return basicIconLogs_1.warnIcon; } });
+Object.defineProperty(exports, "errorIcon", { enumerable: true, get: function () { return basicIconLogs_1.errorIcon; } });
+Object.defineProperty(exports, "infoIcon", { enumerable: true, get: function () { return basicIconLogs_1.infoIcon; } });
+var colorIconLogs_1 = require("./logger/colorIconLogs");
+Object.defineProperty(exports, "successIconLog", { enumerable: true, get: function () { return colorIconLogs_1.successIconLog; } });
+Object.defineProperty(exports, "warnIconLog", { enumerable: true, get: function () { return colorIconLogs_1.warnIconLog; } });
+Object.defineProperty(exports, "errorIconLog", { enumerable: true, get: function () { return colorIconLogs_1.errorIconLog; } });
+Object.defineProperty(exports, "infoIconLog", { enumerable: true, get: function () { return colorIconLogs_1.infoIconLog; } });
+//# sourceMappingURL=index.js.map
