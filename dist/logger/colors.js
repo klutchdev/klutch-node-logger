@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.blue = exports.red = exports.yellow = exports.green = void 0;
-const chalk_1 = __importDefault(require("chalk"));
+var chalk_1 = __importDefault(require("chalk"));
 // Colors
 exports.green = chalk_1.default.green;
 exports.yellow = chalk_1.default.yellow;
