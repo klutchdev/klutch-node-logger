@@ -2,25 +2,17 @@
   "compilerOptions": {
     "strict": true,
     "sourceMap": true,
-    "outDir": "dist",
+    "outDir": "lib",
     "target": "es5",
-    "lib": [
-      "es2017",
-      "es7",
-      "es6",
-      "dom"
-    ],
     "declaration": true,
     "module": "commonjs",
-    "skipLibCheck": true,
     "esModuleInterop": true,
-    "resolveJsonModule": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
   },
   "include": [
-    "src/**/*"
+    "src"
   ],
   "exclude": [
     "dist",

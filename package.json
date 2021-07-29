@@ -1,25 +1,30 @@
 {
   "name": "klutch-node-logger",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Simple logging for Node CLI apps",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "files": [
     "index.js",
     "index.d.ts"
   ],
   "scripts": {
-    "build": "tsc",
-    "prepublishOnly": "npm run clean && npm run build && rollup -c",
-    "clean": "rm -rf dist && rm -rf index.js && rm -rf index.d.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": " tsc",
+    "clean": "rm -rf lib && rm -rf index.js && rm -rf index.d.ts",
+    "prepublishOnly": "npm run clean && npm run build && rollup -c"
   },
+  "homepage": "https://github.com/klutchdev/klutch-node-logger",
   "author": "Kyle \"klutch\" Leary",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/klutchdev/klutch-node-logger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/klutchdev/klutch-node-logger/issues"
+  },
   "dependencies": {
-    "chalk": "^4.1.0",
-    "klutch-node-logger": "^0.0.3",
-    "log-symbols": "^4.0.0"
+    "chalk": "^4.1.1",
+    "log-symbols": "^5.0.0"
   },
   "devDependencies": {
     "@types/node": "^16.4.6",

@@ -1,0 +1,12 @@
+export declare function log(msg: string): void;
+export declare function warn(msg: string): void;
+export declare function error(msg: string): void;
+export declare function info(msg: string): void;
+export declare function successLog(msg: string): void;
+export declare function warnLog(msg: string): void;
+export declare function errorLog(msg: string): void;
+export declare function infoLog(msg: string): void;
+export declare function successIconLog(msg: string): void;
+export declare function warnIconLog(msg: string): void;
+export declare function errorIconLog(msg: string): void;
+export declare function infoIconLog(msg: string): void;
