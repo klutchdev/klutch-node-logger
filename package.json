@@ -1,6 +1,6 @@
 {
   "name": "klutch-node-logger",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Simple logging for Node CLI apps",
   "main": "index.js",
   "types": "index.d.ts",
